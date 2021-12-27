@@ -1,0 +1,14 @@
+{ 
+    "compilerOptions": { 
+      "target": "es2020", 
+      "allowSyntheticDefaultImports": false, 
+      "baseUrl": "./", 
+      "paths": {      
+        "@Root/*": ["./resources/js/*"],       
+        "@Components/*": ["./resources/js/components/*"],
+        "@Routers/*": ["resources/js/routers/*"],       
+        "@Hooks/*": ["./resources/js/hooks/*"],
+        "@Api/*": ["./resources/js/api/*"]
+      } 
+    },  
+  }
