@@ -1,8 +1,8 @@
 import React from 'react';
-import Form from '../../components/Nivel/Form';
-import Body from '../../components/Body/Body';
+import Form from '@Components/Nivel/Form';
+import Body from '@Components/Body/Body';
 import { useHistory } from 'react-router-dom';
-import { useNivel } from '../../hooks/Nivel';
+import { useNivel } from '@Hooks/Nivel';
 
 const Criar = (props) => {
     const history = useHistory();

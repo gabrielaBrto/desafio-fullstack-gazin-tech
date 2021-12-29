@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import Form from '../../components/Desenvolvedor/Form';
-import Body from '../../components/Body/Body';
+import React, { useEffect } from 'react';
+import Form from '@Components/Desenvolvedor/Form';
+import Body from '@Components/Body/Body';
 import { useHistory } from 'react-router-dom';
-import { useDesenvolvedor } from '../../hooks/Desenvolvedor';
+import { useDesenvolvedor } from '@Hooks/Desenvolvedor';
 
 const Editar = (props) => {
     const history = useHistory();

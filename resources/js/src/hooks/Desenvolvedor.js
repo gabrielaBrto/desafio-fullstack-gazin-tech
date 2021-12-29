@@ -5,7 +5,7 @@ import React, {
     useContext,
 } from 'react';
 import { useSnackbar } from 'notistack';
-import api from '../api/api';
+import api from '@Api/api';
 
 const DesenvolvedorContext = createContext({});
 

@@ -1,14 +1,15 @@
 { 
+  "moduleResolution": "node",
     "compilerOptions": { 
       "target": "es2020", 
-      "allowSyntheticDefaultImports": false, 
+      "allowSyntheticDefaultImports": false,   
       "baseUrl": "./", 
       "paths": {      
-        "@Root/*": ["./resources/js/*"],       
-        "@Components/*": ["./resources/js/components/*"],
-        "@Routers/*": ["resources/js/routers/*"],       
-        "@Hooks/*": ["./resources/js/hooks/*"],
-        "@Api/*": ["./resources/js/api/*"]
+        "@Root/*": ["./resources/js/src/*"],       
+        "@Components/*": ["./resources/js/src/components/*"],
+        "@Routers/*": ["resources/js/src/routers/*"],       
+        "@Hooks/*": ["./resources/js/src/hooks/*"],
+        "@Api/*": ["./resources/js/src/api/*"],
       } 
-    },  
-  }
+    }
+}

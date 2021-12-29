@@ -12,5 +12,5 @@
   * or customize the JavaScript scaffolding to fit your unique needs.
   */
  
- require('./components/App');
+ require('./src/components/App');
  

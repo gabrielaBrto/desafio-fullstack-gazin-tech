@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import Body from '../../components/Body/Body';
-import Form from '../../components/Desenvolvedor/Form';
+import React from 'react';
+import Body from '@Components/Body/Body';
+import Form from '@Components/Desenvolvedor/Form';
 
 import { useHistory } from 'react-router-dom';
-import { useDesenvolvedor } from '../../hooks/Desenvolvedor';
+import { useDesenvolvedor } from '@Hooks/Desenvolvedor';
 
 
 const Criar = () => {

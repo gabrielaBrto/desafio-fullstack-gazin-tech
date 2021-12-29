@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import Form from '../../components/Nivel/Form';
-import Body from '../../components/Body/Body';
+import React, { useEffect } from 'react';
+import Form from '@Components/Nivel/Form';
+import Body from '@Components/Body/Body';
 import { useHistory } from 'react-router-dom';
-import { useNivel } from '../../hooks/Nivel';
+import { useNivel } from '@Hooks/Nivel';
 
 const Editar = (props) => {
     const history = useHistory();

@@ -5,7 +5,7 @@ import React, {
     useContext,
 } from 'react';
 import { useSnackbar } from 'notistack';
-import api from '../api/api';
+import api from '@Api/api';
 
 const NivelContext = createContext({});
 
@@ -48,7 +48,6 @@ export const NivelProvider = ({ children }) => {
         setNivel(res.data.nivel);
       })
       .catch((error) => {
-        console.clear();
         enqueueSnackbar('Erro ao buscar nível', {
           variant: 'error',
         });
@@ -81,7 +80,6 @@ export const NivelProvider = ({ children }) => {
           getNiveis()
         })
         .catch((error) => {
-          console.clear();
           if(error.response.status == 501){
             enqueueSnackbar('Não foi possível deletar este nível, pois existem desenvolvedores relacionados a ele', {
               variant: 'error',
