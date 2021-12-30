@@ -2,9 +2,9 @@ import React, {createRef, useCallback} from 'react';
 import ReactDOM from 'react-dom';
 import {SnackbarProvider} from 'notistack';
 import Button from '@material-ui/core/Button';
-import Routers from '../routers/index';
-import { NivelProvider } from '../hooks/Nivel';
-import { DesenvolvedorProvider } from '../hooks/Desenvolvedor';
+import Routers from '@Routers/index';
+import { NivelProvider } from '@Hooks/Nivel';
+import { DesenvolvedorProvider } from '@Hooks/Desenvolvedor';
 
 const App = () => {
 
