@@ -68,12 +68,21 @@ class DesenvolvedorController extends Controller
      */
     public function show($id)
     {
-        $desenvolvedor = $this->desenvolvedores::with('nivel')->findOrFail($id);
+        try {
+            $desenvolvedor = $this->desenvolvedores::with('nivel')->findOrFail($id);
 
-        return response()->json([
-            'success' => true,
-            'desenvolvedor' => $desenvolvedor
-        ]);
+            return response()->json([
+                'success' => true,
+                'desenvolvedor' => $desenvolvedor
+            ]);
+
+        } catch (\Throwable $th) {
+            return response()->json([
+                'success' => false,
+                'message' => $th->getMessage(),
+            ], 400);
+        }
+
     }
 
     /**

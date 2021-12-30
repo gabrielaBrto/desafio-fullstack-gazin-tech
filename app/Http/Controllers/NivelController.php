@@ -66,11 +66,22 @@ class NivelController extends Controller
      */
     public function show($id)
     {
-        $nivel = $this->niveis::findOrFail($id);
-        return response()->json([
-            'success' => true,
-            'nivel' => $nivel
-        ]);
+        try {
+        
+            $nivel = $this->niveis::findOrFail($id);
+        
+            return response()->json([
+                'success' => true,
+                'nivel' => $nivel
+            ]);
+            
+        } catch (\Throwable $th) {
+            return response()->json([
+                'success' => false,
+                'message' => $th->getMessage(),
+            ],400);
+        }
+
     }
 
     /**
