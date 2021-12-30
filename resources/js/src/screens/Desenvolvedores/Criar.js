@@ -17,7 +17,7 @@ const Criar = () => {
 
     return (
         <Body>
-            <div className="mb-4">CRIAR DESENVOLVEDOR</div>
+            <div className="mb-4">NOVO DESENVOLVEDOR(A)</div>
             <Form onSubmit={onSubmit} />
         </Body>
     ); 

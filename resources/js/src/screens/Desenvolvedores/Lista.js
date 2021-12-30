@@ -114,13 +114,13 @@ const columns = [
     {
       field: 'hobby',
       headerName: 'Hobby',
-      width: 100,
+      width: 130,
       editable: true,
     },
     {
       field: 'nivel',
       headerName: 'Nível',
-      width: 100,
+      width: 130,
       editable: true,
       renderCell: (params) => {
         return <div className="rowitem">{params.row.nivel.nivel}</div>;

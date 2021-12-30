@@ -16,7 +16,7 @@ const Criar = (props) => {
     return (
         <Body>
             <div className="mt-3 mb-4">
-                <h6>CRIAR NÍVEL</h6>
+                <h6>NOVO NÍVEL</h6>
             </div>
             <Form onSubmit={onSubmit} />
         </Body>

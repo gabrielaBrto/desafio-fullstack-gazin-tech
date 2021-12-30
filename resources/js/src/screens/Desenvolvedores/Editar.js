@@ -22,7 +22,7 @@ const Editar = (props) => {
     return (
         <Body>
             <div className="mt-3 mb-4">
-                <h6>EDITAR NÍVEL</h6>
+                <h6>EDITAR DESENVOLVEDOR(A)</h6>
             </div>
             <Form 
                 onSubmit={onSubmit}  

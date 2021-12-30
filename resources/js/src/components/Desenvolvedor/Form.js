@@ -134,7 +134,7 @@ const Form = (props) => {
                              ? validation.nivelId
                              : ''
                      }
-                    label="Nivel"
+                    label="Nível"
                     size="small" 
                     variant="outlined"
                     fullWidth
