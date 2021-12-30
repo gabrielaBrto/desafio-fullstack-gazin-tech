@@ -1,7 +1,7 @@
 ## Instalação de dependências
 Após clonar o repositório na raiz do projeto execute os comandos:
-composer install  
-npm install  
+* composer install  
+* npm install  
 
 ## Configurar arquivo env 
 Após instalar as dependências necessárias no passo anterior, na raiz do projeto
@@ -24,3 +24,4 @@ Em um terminal execute o comando abaixo para rodar a api
 Em outro terminal execute o comando abaixo para rodar a aplicação
 * npm run watch  
 
+Após seguir todos estes passos é só abrir o seu navegador e acessar: http://127.0.0.1:8000/
